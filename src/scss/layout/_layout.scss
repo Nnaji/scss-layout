@@ -1,0 +1,55 @@
+// Layout Container Section
+.lyt {
+    @include clearfix;
+    &.lyt--primary {
+        background-color: $color-primary;
+        min-height: 200px;
+    }
+    &.lyt--secondary {
+        background-color: $color-secodary;
+        min-height: 200px;
+    }
+    &.lyt--default {
+        background-color: $color-default;
+        min-height: 200px;
+    }
+    &.lyt--base {
+        background-color: $color-base;
+        min-height: 200px;
+    }
+    &.lyt--light {
+        background-color: $color-light;
+        min-height: 200px;
+    }
+
+    @at-root #{&}-container {
+        margin: 0 auto;
+        @include clearfix;
+        max-width: $xl;
+        min-height: 200px;
+    }
+    @at-root #{&}-container-fluid {
+        margin: 0 auto;
+        width: 100%;
+        @include clearfix;
+    }
+
+    // Layout Row Section
+    @at-root #{&}-row {
+        @include clearfix;
+        @include makegrid;
+        @include mq($md-dw) {
+            margin: 0 15px;
+            padding: 0 15px;
+            @include makegrid(12, md);
+        }
+        @include mq($lg-dw) {
+            //
+            @include makegrid(12, lg);
+        }
+        @include mq($xl-dw) {
+            //
+            @include makegrid(12, xl);
+        }
+    }
+}

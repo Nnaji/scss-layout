@@ -1,0 +1,41 @@
+// Clearfix Section
+@mixin clearfix {
+    *zoom: 1;
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+// Image Grid Section
+@mixin colgrid($qty, $nmargin) {
+    width: ((100% - (($qty - 1) * $nmargin)) / $qty);
+    &:nth-child(n) {
+        margin-right: $nmargin;
+        margin-bottom: $nmargin;
+    }
+    &:nth-child(#{$qty}n) {
+        margin-right: 0;
+    }
+}
+
+// Grid Section
+@mixin makegrid($colsize: 12, $mq: sm) {
+    @for $i from 1 through $colsize {
+        .col-#{$mq}-#{$i} {
+            width: ((100% / $colsize) * $i);
+            float: left;
+        }
+    }
+}
+
+// Media Query Section
+@mixin mq($min-width) {
+    @media (min-width: $min-width) {
+        @content;
+    }
+}

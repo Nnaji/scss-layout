@@ -1,0 +1,37 @@
+// Color Variables
+
+$skyblue: #ceecef !default;
+$skyblue-lighter: #e7edea !default;
+$midnightblue: #030d4f !default;
+$red: #fb0c06 !default;
+$gold: #ffc52c ! default;
+
+$black: #000000 !default;
+$white: #ffffff !default;
+
+$color-primary: $midnightblue;
+$color-secodary: $gold;
+$color-light: $skyblue-lighter;
+$color-base: $red;
+$color-default: $skyblue;
+
+// Font Variables
+$base-font-size: 1rem;
+
+// Device Width Variables
+
+// Small Device Width
+$sm-dw: 36rem; // 576px;
+$sm: 33.75rem; // 540px;
+
+// Medium Device Width
+$md-dw: 48rem; // 768px;
+$md: 45rem; // 720px
+
+// Large Device Width
+$lg-dw: 62rem; // 992;
+$lg: 60rem; // 960px;
+
+// Xtra Large Device Width
+$xl-dw: 75rem; // 1200px
+$xl: 71.25rem; // 1140px;

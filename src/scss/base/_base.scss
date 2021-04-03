@@ -1,0 +1,10 @@
+// Base SCSS
+
+body {
+    font-size: $base-font-size;
+    line-height: 1.5;
+    min-width: 320px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    background-color: $white;
+    color: lighten($black, 20%);
+}
